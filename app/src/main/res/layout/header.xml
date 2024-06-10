@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="190dp"
+    android:padding="16dp"
+    android:background="@color/text_color">
+
+    <ImageView
+
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:src="@drawable/log"
+        tools:ignore="ContentDescription,ImageContrastCheck" />
+    <TextView
+        android:layout_marginTop="5dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorWhite"
+        android:text="VAIMEYAH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="HardcodedText" />
+    <TextView
+        android:text="Book Exchange"
+        android:textColor="@color/colorWhite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="HardcodedText" />
+
+</LinearLayout>

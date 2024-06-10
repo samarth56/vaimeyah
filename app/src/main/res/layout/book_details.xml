@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".buy.BookDetails">
+
+    <include layout="@layout/toolbar_layout"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+
+    <ImageView
+        android:elevation="6dp"
+        android:src="@drawable/bookcover"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:textAllCaps="true"
+            android:textColor="@color/text_color"
+            android:id="@+id/tvBookNameDetails"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            tools:text="@string/book_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:textAllCaps="true"
+            android:textColor="@color/text_color"
+            android:id="@+id/tvAuthorNameDetails"
+            tools:text="@string/author_name"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:textStyle="bold"
+            android:textColor="@color/colorAccent"
+            android:id="@+id/tvPriceDetails"
+            tools:text="@string/book_price"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+        <TextView
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="Seller Details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/text_color"
+                android:id="@+id/tvSellerNameDetails"
+                android:textSize="18sp"
+                tools:text="Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+<!--            <TextView-->
+<!--                android:autoLink="phone"-->
+<!--                android:linksClickable="true"-->
+<!--                android:layout_marginBottom="5dp"-->
+<!--                android:textColor="@color/numberColor"-->
+<!--                android:id="@+id/tvSellerPhoneDetails"-->
+<!--                android:textSize="18sp"-->
+<!--                tools:text="Phone No"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"/>-->
+            <TextView
+                android:textColor="@color/text_color"
+                android:id="@+id/tvSellerEmailDetails"
+                android:textSize="18sp"
+                tools:text="Email id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+
+            android:layout_width="200dp"
+            android:layout_height="38dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            app:cardCornerRadius="19dp"
+            app:cardElevation="0dp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorAccent">
+
+                <RelativeLayout
+                    android:id="@+id/chatBtnDetailBook"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:focusable="true">
+
+                    <TextView
+                        android:id="@+id/gradient_button_4_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:ellipsize="end"
+                        android:lines="1"
+                        android:maxLength="10"
+                        android:text="CHAT"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/gradient_button_4_icon"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="15dp"
+                        android:background="@drawable/ic_baseline_chat_24" />
+
+                </RelativeLayout>
+
+            </FrameLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</LinearLayout>

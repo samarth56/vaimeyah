@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dist="http://schemas.android.com/apk/distribution"
+    package="com.therealsanjeev.nsutbookexchange">
+
+    <dist:module dist:instant="true" />
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".chat.chatBox"
+            android:parentActivityName=".MainActivity"/>
+
+        <activity android:name=".chat.chatUsers"
+            android:parentActivityName=".chat.chatBox"/>
+
+        <activity android:name=".feedback"
+            android:parentActivityName=".MainActivity"/>
+
+        <activity
+            android:name=".buy.BookDetails"
+            android:parentActivityName=".buy.buy" />
+
+        <activity android:name=".homepage" />
+        <activity
+            android:name=".login.RegisterActivity"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".login.LoginActivity"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".aboutUs"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".sell.sell"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name=".buy.buy"
+            android:parentActivityName=".MainActivity" />
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

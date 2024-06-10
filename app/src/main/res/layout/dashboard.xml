@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawerMenu"
+    android:background="@drawable/plain"
+    tools:openDrawer="end">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="ExtraText">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolBar"
+            android:elevation="4dp"
+            app:titleTextColor="@color/text_color"
+            android:background="@color/colorWhite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:title="@string/app_name"
+            android:minHeight="?attr/actionBarSize"
+            android:layout_alignParentTop="true"
+            app:theme="@style/Theme.AppCompat.Light.DarkActionBar"
+            />
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/welcome"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="48sp"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginTop="70dp"
+            android:layout_marginStart="16dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"/>
+            />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="16dp"
+            android:text="@string/app_tagline"
+            android:textColor="@color/colorAccent"
+            android:textSize="16sp"
+            tools:ignore="TextContrastCheck" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView2"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_toRightOf="@id/textView2"
+            android:text="@string/dashborad_quote"
+            android:textSize="16sp"
+            tools:ignore="RtlHardcoded,TextContrastCheck" />
+        <LinearLayout
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="50dp"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_horizontal"
+            android:layout_alignBottom="@id/textView2"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <Button
+            android:layout_marginRight="16dp"
+            android:id="@+id/btnBuy"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btnback"
+            android:text="@string/buy_books"
+            android:textColor="@color/colorWhite"
+            tools:ignore="ButtonStyle,OnClick,RtlHardcoded" />
+        <Button
+            android:id="@+id/btnSell"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btnback"
+            android:text="@string/sell_books"
+            android:textColor="#ffff"
+            tools:ignore="ButtonStyle" />
+        </LinearLayout>
+    </RelativeLayout>
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:itemTextColor="@color/colorPrimaryDark"
+        app:itemIconTint="@color/text_color"
+        android:background="@color/colorWhite"
+        android:layout_gravity="start"
+        app:menu="@menu/navigation_menu"
+        android:id="@+id/navigationView"
+        android:theme="@style/NavigationView"
+        app:headerLayout="@layout/header"
+        tools:ignore="VisualLintBounds">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="end"
+            android:text="App Version 1.0.0"
+            tools:ignore="HardcodedText,RtlHardcoded" />
+    </com.google.android.material.navigation.NavigationView>
+</androidx.drawerlayout.widget.DrawerLayout>

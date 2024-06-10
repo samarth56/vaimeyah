@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+
+    tools:context=".aboutUs">
+
+    <include layout="@layout/toolbar_layout"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_marginTop="10dp"
+            android:src="@drawable/aboutprofile"
+            android:layout_gravity="center"
+            android:layout_width="150dp"
+            android:layout_height="150dp"/>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:textSize="24sp"
+            android:gravity="center"
+            android:text="Developed JSCOE's student"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+
+        <Button
+            android:id="@+id/aboutBtn"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/blue_border_rounded_cornwe"
+            android:text="Instagram"
+            android:textColor="@color/colorWhite"
+            android:textSize="16sp" />
+        <!--<Button
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"
+            android:id="@+id/aboutBtnTw"
+            android:textColor="@color/colorWhite"
+            android:text="Twitter"
+            android:background="@drawable/blue_border_rounded_cornwe"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"/>-->
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

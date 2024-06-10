@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">VAIMEYAH Book ExChange</string>
+    <string name="buy_books">BUY BOOKS</string>
+    <string name="sell_books">SELL BOOKS</string>
+    <string name="VAIMEYAH_book_exchange">VAIMEYAH BOOK EXCHANGE</string>
+    <string name="author_name">Author Name</string>
+    <string name="book_name">Book Name</string>
+    <string name="book_price">Book Price</string>
+    <string name="search_your_book">SEARCH YOUR BOOK</string>
+    <string name="search">SEARCH</string>
+    <string name="request">REQUEST</string>
+    <string name="your_email_id">Email</string>
+    <string name="your_whatsapp_no">Phone no:</string>
+    <string name="name">Name</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="about_Description">If you facing any kind of problem \n or you have kind of suggestions to improve our app\n\n You can contact me :</string>
+    <string name="email">MAIL ID@ :rutujahegade7@gmail.com\n[JSCOE]</string>
+
+    <string name="you_are_not_a_member_register">You are not a member? <b><font fgcolor='#3CDA85'>Register</font></b></string>
+    <string name="already_have_account">"Already have account? <b><font fgcolor='#3CDA85'>Login</font></b></string>
+    <string name="dashborad_quote">It always seems impossible until it’s done.</string>
+    <string name="app_tagline">Nice to see you again!</string>
+    <string name="rate">e.g. ₹100</string>
+
+</resources>

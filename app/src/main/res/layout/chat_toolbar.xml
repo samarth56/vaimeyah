@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:src="@drawable/login_photo"
+            android:id="@+id/chatProfileToolbar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+        <TextView
+            android:layout_toRightOf="@id/chatProfileToolbar"
+            android:layout_toEndOf="@id/chatProfileToolbar"
+            android:layout_centerVertical="true"
+            android:id="@+id/chatUsernameToolbar"
+            android:layout_marginLeft="10dp"
+            android:textSize="18dp"
+            android:textColor="@color/text_color"
+            android:text="JSCOE STUDENT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+</RelativeLayout>

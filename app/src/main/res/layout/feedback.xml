@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".feedback">
+    <include layout="@layout/toolbar_layout"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_marginTop="15dp"
+            android:textSize="30sp"
+            android:fontFamily="@font/insta_font"
+            android:textColor="@color/text_color"
+            android:text="@string/about_Description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/insta_font"
+            android:textColor="@color/text_color"
+            android:text="@string/email"
+            android:textSize="30sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/insta_font"
+            android:textColor="@color/text_color"
+            android:text="\n\nTHANK YOU FOR SUPPORTING :)"
+            android:textSize="30sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="HardcodedText" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/happy"
+            tools:ignore="ContentDescription,ImageContrastCheck" />
+
+        <Button
+            android:id="@+id/feedbackMail"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/blue_border_rounded_cornwe"
+            android:text="FeedBack"
+            android:textColor="@color/colorWhite"
+            android:textSize="16sp"
+            tools:ignore="HardcodedText,TouchTargetSizeCheck,VisualLintButtonSize" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
