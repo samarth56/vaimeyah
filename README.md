@@ -18,5 +18,4 @@ This app-based on java and firebase but now to improve this app performance i am
 
 # ScreenShot
 | <img src="https://raw.githubusercontent.com/therealsanjeev/NSUTBookExchange/master/Photos/Screenshot_20200619-160054.png" width="250"> <img src="https://raw.githubusercontent.com/therealsanjeev/NSUTBookExchange/master/Photos/Screenshot_20200619-160106.png" width="250"> 
-<img src="https://raw.githubusercontent.com/therealsanjeev/NSUTBookExchange/master/Photos/Screenshot_20200619-160132.png" width="250"> 
 <img src="https://raw.githubusercontent.com/therealsanjeev/NSUTBookExchange/master/Photos/Screenshot_20200619-160305.png" width="250"> |
